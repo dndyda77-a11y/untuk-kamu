@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Untuk Kamu ❤️</title>
+<style>
+:root{--site-primary:#e85d75;--site-secondary:#ffb6c1;--site-background:#fff1f4;--site-on-primary:#fff;--site-on-secondary:#5a1825;--site-on-background:#35151d;--site-font-body:system-ui,sans-serif;--site-font-heading:Georgia,serif;--site-heading-scale:1;--site-spacing-scale:1;--site-radius-scale:1;--site-decoration-opacity:1}
+*{box-sizing:border-box}body{margin:0;font-family:var(--site-font-body);color:var(--site-on-background)}
+#app{min-height:100vh;background:var(--site-background);display:grid;place-items:center;padding:32px;position:relative;overflow:hidden}
+.card{width:min(680px,100%);background:#fff;border-radius:24px;padding:42px 32px;text-align:center;box-shadow:0 18px 60px #c94f6626;position:relative;z-index:2}
+.heart{font-size:64px;animation:pulse 1.5s infinite;margin-bottom:8px}
+h1{font-family:var(--site-font-heading);font-size:clamp(32px,7vw,54px);margin:0 0 18px;color:var(--site-primary)}
+p{font-size:18px;line-height:1.8;margin:12px auto;max-width:570px}
+.signature{margin-top:28px;font-family:var(--site-font-heading);font-size:24px;color:var(--site-primary)}
+button{margin-top:25px;border:0;border-radius:999px;padding:13px 24px;background:var(--site-primary);color:white;font-size:16px;cursor:pointer}
+.hidden{display:none}
+.float{position:absolute;opacity:.45;animation:float 6s ease-in-out infinite;font-size:28px}
+.f1{left:8%;top:12%}.f2{right:10%;top:18%;animation-delay:1s}.f3{left:15%;bottom:12%;animation-delay:2s}.f4{right:12%;bottom:10%;animation-delay:3s}
+@keyframes pulse{50%{transform:scale(1.12)}}@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+</style>
+</head>
+<body>
+<div id="app">
+<div class="float f1">♡</div><div class="float f2">❤</div><div class="float f3">♡</div><div class="float f4">❤</div>
+<main class="card">
+<div class="heart">❤️</div>
+<h1>Untuk Kamu</h1>
+<p>Kalau kamu sampai membuka link ini, berarti ada satu hal yang ingin aku sampaikan...</p>
+<p><b>Aku mungkin nggak selalu pandai mengungkapkan perasaan, tapi aku selalu bersyukur karena ada kamu.</b></p>
+<p>Terima kasih sudah hadir, sudah bertahan, dan sudah menjadi seseorang yang membuat hari-hariku terasa lebih berarti.</p>
+<p>Aku nggak janji semuanya akan selalu sempurna. Tapi aku janji, selama aku masih diberi kesempatan, aku akan terus berusaha menjaga kamu, menghargai kamu, dan membuat kamu merasa dicintai.</p>
+<p>Semoga kita tetap jadi dua orang yang saling memilih, bahkan ketika keadaan sedang nggak mudah.</p>
+<div class="signature">I love you, always. ❤️</div>
+<button onclick="document.getElementById('extra').classList.toggle('hidden')">Ada satu lagi... 💌</button>
+<p id="extra" class="hidden"><b>Kalau dunia memberiku kesempatan memilih lagi, aku tetap akan memilih kamu. Tanpa ragu. 🥹❤️</b></p>
+</main></div>
+</body>
+</html>
